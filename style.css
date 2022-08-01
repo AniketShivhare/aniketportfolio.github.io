@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;  
+    overflow: hidden;     
+   }
+   
+   .container{
+       display: flex;
+   }
+   .sidebar{
+    /* position: absolute; */
+   background: rgb(183, 181, 181);
+   /* background: rgb(0, 217, 255);   */
+   width: 200px;
+   font-family: 'Lora', serif;
+   height: 100vh;  
+   transition: transform 0.3s ease-in;
+   }
+   .sidebar nav{
+   padding: 28px;
+   }
+   
+   .sidebar nav li{
+       list-style: none;
+       font-size: large;
+       padding: 33px 0;
+   
+    
+   }
+   .sidebar li a{
+       text-decoration: none;
+       color: black;
+   }
+   .main{
+       /* background: rgb(246, 255, 0); */
+       width: 90vw;
+   }   
+   .infocontainer{
+       /* background: #000; */
+       width: 80vw;
+       height: 740px;
+       margin: 70px auto;
+       margin-top: 25px;
+       display: flex; 
+       justify-content: left;
+       align-items: center;
+       margin-left: 70px;      
+   }   
+   .devinfo{
+       font-size: 16px;
+       /* color: aliceblue; */
+       display: flex;
+       flex-direction: column;
+       /* align-items: center; */
+       font-family: 'Open Sans', sans-serif;       
+   }
+   .hello{
+    font-size: 3em;
+   }
+   .name{
+       font-size: 3.2em;
+       font-weight: bold;
+   } 
+   .about{
+       font-size: 2.2em;
+   }
+   .aboutmore{
+       font-size: 1.3em;
+       padding: 20px;
+       padding-left: 0px;
+   }
+   .buttons button{
+       margin-top: 25px;
+       margin-left: 20px;
+       padding: 10px;
+       border-radius: 20px;
+       background-color: rgb(65, 120, 231);
+       font-weight: bold;
+       color: aliceblue;
+       cursor: pointer;
+   }
+   .buttons button:hover{
+       background: aliceblue;
+       color:rgb(65, 120, 231); ;
+   }
+   .devpic{
+       height: 35vw;
+       width: 35vw;
+       display: flex;
+       
+   }
+   
+   /* //  Contact CSS  // */
+   
+   
+   .infocontact h1{
+       font-family: 'Open Sans', sans-serif;
+       margin-left: 10px; 
+   }  
+   .infocontact form div{
+       padding: 12px;
+       /* text-align: center; */  
+   }
+   .infocontact form button{
+       margin: 5px;
+       padding: 10px 20px;
+   }
+   #emailHelp{
+       font-size: small;
+       display: flex;
+       flex-direction: column;
+   }
+   /* .emailfolder{
+    display: flex;
+       flex-direction: column;
+   }
+   .clientphonefolder{
+    display: flex;
+       flex-direction: column;
+   }
+   .clientenquiryfolder{
+    display: flex;
+       flex-direction: column;
+   } */
+   .subform input{
+       /* min-width: 400px; */
+       border-radius: 3px;
+       width: 40vw;
+       /* text-align: center; */
+       /* margin-left:360px ; */
+       /* margin-right: 360px; */
+   }
+   .subform{
+       margin-left: -12px;     
+   }
+   .infocontact{
+       font-family: 'Lora', serif;
+       text-align: center;
+       padding-top: 110px;
+       font-size: large;
+       /* text-align: left; */
+       display: flex;
+       flex-direction: column;
+       margin-left: 10px;    
+   }
+   /*   My Intro Css */
+   
+   .intro h2{
+       font-family: 'Open Sans', sans-serif;
+       margin: 12px;
+   }
+   .intro p{
+       font-family: 'Lora', serif;
+       margin: 12px;
+   }
+   .skillscontainer{
+       margin: 12px;
+   }
+   .skillitem{
+       display: flex;
+       align-items: center;
+   }
+   .skill{
+       
+       width: 300px;
+       height: 5px;
+       border: 2px solid black;
+   }
+   
+   .hundred{
+       width: 300px;
+       background: rgb(255, 0, 0);
+   }
+   .seventyfive{
+       width: 225px;
+       background: rgb(82, 93, 255);
+   }
+   .fifty{
+       width: 150px;
+       background: rgb(0, 255, 34);
+   }
+   .twentyfive{
+       width: 75px;
+       background: rgb(255, 136, 0);
+   }
+   .intro{
+    margin-left: 45px;
+    margin-top: 50px;
+
+   }
+   
+   /*    Services CSS   */
+   
+   .services h1{
+       padding: 20px;
+       margin-left: 6px;
+       /* margin:120px 0px 0px 400px ;  */
+       margin-top: 120px;
+       text-align: center;
+   }
+   .services h3{
+    margin-left: 15px;
+       margin-top: 20px;
+       /* margin-left: 300px; */
+       text-align: center;
+   }
+   .sidebarGo{
+       transform: translate(-300px,0px);
+       position: absolute;
+      }
+   .menuburger{
+     position: absolute;
+     cursor: pointer;
+     left: 10px;
+     top: 10px;
+   }
+   .cross{
+       /* top: 10px;
+       left:40px; */
+       margin-left: 155px;
+       margin-top: -30px;
+   }
+   @media (max-width: 1420px) {
+    .devpic{
+        display: none;
+    }
+    .sidebar{
+        position: absolute;
+    }
+    .devinfo{
+        font-size: 11px;
+    }
+    .infocontainer{
+        margin-left: 43px;   
+    }
+   }
+
+   @media(max-width:600px){
+    .infocontact{
+        margin-top: -20px;
+    }
+   }
+   
